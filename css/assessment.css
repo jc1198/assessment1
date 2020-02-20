@@ -1,0 +1,53 @@
+/* Default Mobile View */
+
+body{
+	background-image: url("../images/back-ground.jpeg")
+}
+
+
+img{
+   width: 120px; 
+   margin-bottom: 15px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   /*Your code here*/
+}
+
+
+h1{
+	text-align: center;
+}
+
+div{
+   padding: 30px; 
+   margin:5px; 
+   min-height: 100px;  /* just to make the spacing a little nicer */
+   /* YOUR CODE HERE */
+}
+
+#mystuff{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto;
+
+}
+
+
+
+/* Desktop View */
+@media screen and (min-width: 850px){
+
+	#mystuff{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+	}
+
+	div:nth-child(even){
+		outline: 2px solid black;
+	}
+
+
+
+}	
